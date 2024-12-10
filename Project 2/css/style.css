@@ -1,0 +1,796 @@
+
+/* ------------------Front Link start--------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* ===================Front link End======================== */
+
+/* ----------------------Common Css Start------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+
+    list-style: none;
+}
+
+.container{
+
+    width: 1320px;
+    margin: 0 auto;
+}
+img{
+
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+:root{
+
+    --ibm: "IBM Plex Sans", sans-serif;
+    --bandcolor: #FF9600;
+    --yellotail: "Yellowtail", cursive;
+    --inter: "Inter", sans-serif;
+    --IBM:"IBM Plex Sans", sans-serif;
+}
+/* ========================Common Css End=================== */
+
+/* ------------------------Nav PArt Start-------------------- */
+#main_nav{
+
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.main_manu{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.manu_col ul{
+
+    display: flex;
+    gap: 53px;
+}
+
+.manu_col ul li a{
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ibm);
+    transform: all linear .3s;
+
+}
+
+.manu_col ul li a:hover{
+
+    color: #FF9600;
+}
+
+.menu_button a{
+
+    padding: 20px 51px 20px;
+    background: var(--bandcolor);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--ibm);
+    border-radius: 10px;
+}
+
+.menu_button a:hover{
+
+    background: black;
+}
+
+
+.manu_col .drop{
+    gap: 8px;
+}
+
+.main_manu ul{
+
+    position: relative;
+}
+
+.manu_col ul li .drop{
+
+    position: absolute;
+    flex-direction: column;
+    background: white;
+    border-radius:8px;
+    padding: 23px 23px;
+    top: 40px;
+    transform: translateX(-50%);
+    left:24%;
+    opacity:0%;
+    align-items: center;
+    
+
+}
+.manu_col ul li:hover .drop{
+
+    opacity:85%;
+}
+
+
+.manu_col .drop li a{
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    
+}
+
+
+/* -------------------------Nav Part End--------------------- */
+
+/* -----------------------------Banner Part Start Css--------------- */
+
+#banner{
+    background: url('../image/gp.png') no-repeat center;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 390px;
+}
+
+.text h1{
+
+    font-size: 72px;
+    font-weight: 700;
+    width: 819px;
+    color: #fff;
+    font-family: var(--ibm);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button_col .button1 a{
+
+    padding: 20px 41px;
+    background: var(--bandcolor);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    transform: all linear .5s;
+}
+
+.button_col .button2 a{
+
+    padding: 20px 41px;
+    background:white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color:black;
+    transform: all linear .5s;
+
+}
+
+.button_col{
+
+    display: flex;
+    gap: 57px;
+    justify-content: center;
+    margin-top: 48px;
+    
+}
+
+.button_col .button2 a:hover{
+
+    background: #FF9600;
+}
+
+.button_col .button1 a:hover{
+
+    background: black;
+}
+
+
+/* -----------------------------Banner Part End Css ----------------- */
+
+/* ----------------------------Adventure Css Start------------------------ */
+#Adventure{
+
+    padding-top: 105px;
+    padding-bottom: 100px;
+}
+
+.style_font h2{
+
+    font-size: 30px;
+    font-weight: 400px;
+    color: #49C4F5;
+    font-family: var(--yellotail);
+}
+
+.heading h3{
+
+    font-size: 54px;
+    font-weight: 700;
+    color: #000000;
+    font-family: var(--ibm);
+    width: 598px;
+    margin-bottom: 29px;
+
+}
+
+.heading{
+
+    position: relative;
+}
+.heading::after{
+
+    content: " ";
+    height: 1px;
+    width: 83px;
+    background-color: black;
+    position: absolute;
+}
+.para{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000000;
+    width: 597px;
+    margin-top: 39px;
+    margin-bottom: 33px;
+}
+
+.adventure_all_text .option .single{
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.adventure_all_text .option{
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.option .single p{
+
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--ibm);
+  color: #000000;
+}
+.single span{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #C4C4C4;
+    display: inline-block;
+
+}
+
+.adventure_button a{
+
+    padding: 20px 35px;
+    color: #fff;
+    background: var(--bandcolor);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    margin-top: 48px;
+    transform: all linear .5s;
+}
+
+.adventure_button a:hover{
+
+
+    background: #000000;
+}
+
+.advpic_whole .p1{
+
+    width: 299px;
+    height: 620px;
+    margin-bottom: 100px;
+
+}
+
+.advpic_whole .p2{
+
+    width: 294px;
+    height: 511px;
+    margin-left: 51px;
+
+}
+.adventure_whole{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter1{
+
+    background: #FFF4E5;
+    padding-bottom: 46px;
+    padding-left: 84px;
+    padding-right: 84px;
+    display: inline-block;
+}
+
+.counter2{
+
+    background: #E7FDE9;
+    padding-bottom: 46px;
+    padding-left: 84px;
+    padding-right: 84px;
+    display: inline-block;
+}
+
+.counter3{
+
+    background: #F2F2FD;
+    padding-bottom: 46px;
+    padding-left: 84px;
+    padding-right: 84px;
+    display: inline-block;
+}
+.counter4{
+
+    background: #FFF4E5;
+    padding-bottom: 46px;
+    padding-left: 84px;
+    padding-right: 84px;
+    display: inline-block;
+}
+
+
+.counter1 .single p{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000000;
+   
+}
+
+.counter2 .single p{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000000;
+   
+}
+
+.counter3 .single p{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000000;
+   
+}
+.counter4 .single p{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000000;
+   
+}
+
+.main_counter{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* ============================Adventure Css End========================== */
+
+/* ---------------------------Sports Css Start--------------- */
+
+#Sports{
+
+    padding-top: 110px;
+    background: #0C3543;
+}
+
+.font_style h2{
+
+    font-size: 30px;
+    font-weight: 400px;
+    color: var(--bandcolor);
+    font-family: var(--yellotail);
+    margin-bottom: 8px;
+}
+
+.Sports_heading h3{
+
+    font-size: 54px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--ibm);
+    width: 394px;
+    margin-bottom: 22px;
+}
+
+.Sports_heading{
+
+    position: relative;
+}
+.Sports_heading::after{
+
+    content: " ";
+    height: 3px;
+    width: 81px;
+    background-color: #C4C4C4;
+    position: absolute;
+}
+
+
+.para2 p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+    width: 622px;
+}
+
+.sports_whole{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sports_single_card{
+
+    width: 424px;
+    border-radius: 15px;
+
+}
+
+.sports_single_card .sports_text{
+
+    padding-top: 37px;
+    padding-bottom: 45px;
+    background: #0F4152;
+}
+
+.sports_single_card .sports_text h2{
+
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--inter);
+    color:#FFF4E5;
+    text-align: center;
+    transition: all linear .3s;
+    
+
+}
+
+.sports_text:hover h2{
+
+    color: var(--bandcolor);
+}
+
+.sports_single_card .sports_text p{
+
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter);
+    color:#FFF4E5;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.single_card_img:hover img{
+
+    transform: scale(1.1);
+}
+
+.single_card_img img{
+
+    transition: all linear.3s;
+}
+
+.single_card_img{
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+
+.sports_card_row{
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    margin-top: 99px;
+    row-gap: 50px;
+
+}
+
+.sports_group img{
+
+    margin-top: 117px;
+}
+
+
+/* ==========================Sports Css End=================== */
+
+/* --------------------------Sports Video Css Start-------------- */
+
+#Sports_Video{
+
+    background: var(--bandcolor);
+    padding-top: 30px;
+}
+
+#Sports_Video .container{
+    position: relative;
+    padding-bottom: 500px;
+}
+
+.sports_logo img{
+
+    width: 130px;
+    margin-top: 30px;
+    
+}
+
+.sports_logo{
+
+    display: flex;
+    justify-content: center;
+}
+ .Heading_3 h2{ 
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+    margin-top: 29px;
+ }
+.Heading_4 h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+    margin-top: 51px;
+}
+
+.single_buttion1 a{
+
+    padding: 23px 43px;
+    background: #0C3543;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 700;
+    font-family: var(--ibm);
+}
+
+.single_button2 a{
+
+    padding: 23px 55px;
+    background: #0C3543;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 700;
+    font-family: var(--ibm);
+}
+
+.video_buttons{
+
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.sports_card .sports_card_1{
+
+    width: 395px;
+    height: 447px;
+    background: url(../image/video_card1.png);
+    padding-left: 66px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+.sports_card .sports_card_1 h2{
+
+    font-weight: 700;
+    font-size: 40px;
+    font-family: var(--ibm);
+    color: #fff;
+
+}
+.sports_card .sports_card_1 h3{
+
+    font-weight: 700;
+    font-size: 28px;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+    
+}
+
+.sports_card span{
+    width: 226px;
+    height: 2px;
+    background: #C4C4C4;
+    display: inline-block;
+
+
+}
+
+
+
+.sports_card .sports_card_1 p{
+
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+
+.sports_card .sports_card_2{
+
+    width: 395px;
+    height: 447px;
+    background: url(../image/video_card2.png);
+    padding-left: 66px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.sports_card .sports_card_2 h2{
+
+    font-weight: 700;
+    font-size: 40px;
+    font-family: var(--ibm);
+    color: #fff;
+
+}
+
+.sports_card span{
+    width: 226px;
+    height: 2px;
+    background: #C4C4C4;
+    display: inline-block;
+
+
+}
+
+.sports_card .sports_card_2 h3{
+
+    font-weight: 700;
+    font-size: 28px;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+    
+}
+
+.sports_card .sports_card_2 p{
+
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+
+.sports_card .sports_card_3{
+
+    width: 395px;
+    height: 447px;
+    background: url(../image/cards_3.png);
+    padding-left: 66px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.sports_card .sports_card_3 h2{
+
+    font-weight: 700;
+    font-size: 40px;
+    font-family: var(--ibm);
+    color: #fff;
+
+}
+
+.sports_card span{
+    width: 226px;
+    height: 2px;
+    background: #C4C4C4;
+    display: inline-block;
+
+
+}
+
+.sports_card .sports_card_3 h3{
+
+    font-weight: 700;
+    font-size: 28px;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+    
+}
+
+.sports_card .sports_card_3 p{
+
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+
+
+.sports_video_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 98px;
+}
+
+/* ==========================Sports Video Css End================  */
+
+/* ============================Choose us Css Start=============== */
+
+#idel{
+    
+    margin-top: 201px;
+    background: #fff;
+}
+
+.style_text_1 h2{
+
+    font-weight: 400;
+    font-size: 30px;
+    font-family: var(--yellotail);
+    color: #14B9F1;
+    text-align: center;
+}
+/* ---------------------------Choose us Css End------------------- */
